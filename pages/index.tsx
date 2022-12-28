@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Image from "next/legacy/image";
+import Image from "next/image";
 
 import CatCard from '../components/cards/cat/CatCard'
 import { mockCatCardProps } from '../components/cards/cat/CatCard.mocks'
@@ -49,12 +49,15 @@ const Home: NextPageWithLayout = () => {
                             alt="Vercel Logo"
                             width={72}
                             height={16}
-                        />
+                            style={{
+                                maxWidth: "100%",
+                                height: "auto"
+                            }} />
                     </span>
                 </a>
             </footer>
         </div>
-    )
+    );
 }
 
 export default Home
