@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Image from 'next/image'
+import Image from "next/legacy/image";
 
 import CatCard from '../components/cards/cat/CatCard'
 import { mockCatCardProps } from '../components/cards/cat/CatCard.mocks'
